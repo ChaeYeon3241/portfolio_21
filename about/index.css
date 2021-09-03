@@ -1,0 +1,620 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+/* 포트폴리오 */
+.portfolio_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(https://chaeyeon3241.github.io/portfolio_21/pt_01.png) repeat-y center top;
+}
+
+.port_left {
+    float: left;
+    width: 33%;
+    height: auto;
+    background: url(https://chaeyeon3241.github.io/portfolio_21/pt_02.png) repeat center top;
+}
+
+.port_left .port_left_box {
+    position: fixed;
+    width: 33%;
+    height: 100%;
+    background: url(https://chaeyeon3241.github.io/portfolio_21/pt_02.png) repeat-y center top;
+    background-size: 100%;
+    z-index: 10;
+}
+
+.port_left .port_left_box .leftbox_01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.port_left .port_left_box .leftbox_01 .left_bg {
+    position: relative;
+    width: 100%;
+    vertical-align: top;
+}
+
+.port_left .port_left_box .leftbox_01 .left_bg>img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.port_left .port_left_box .leftbox_02 {
+    z-index: 101;
+    border-top: #aaa solid 1px;
+    position: absolute;
+    bottom: 25px;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    line-height: 19px;
+    font-size: 18px;
+    color: #aaa;
+    text-align: center;
+    padding: 13px 2px 0 2px;
+    box-sizing: border-box;
+}
+
+.port_left .port_left_box .leftbox_02 .leftbox_02_inner p {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.port_right {
+    background: #fff2ef;
+    float: right;
+    width: 67%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.port_right_box {
+    clear: both;
+    padding-top: 85px;
+    padding-bottom: 40px;
+    height: auto;
+}
+
+.port_right_box .port_main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 2% 0 0 0;
+}
+
+.port_right_box .port_main .main {
+    padding: 0 10%;
+}
+
+.port_right_box .port_main .main .main_tit {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.port_right_box .port_main .main .main_tit:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: 6px;
+    height: 2px;
+    background: #2d2d2d;
+    right: 0;
+}
+
+.port_right_box .port_main .main .main_tit>p {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    font-weight: 600;
+    color: #2a2a2a;
+    padding-left: 0;
+    padding-right: 14px;
+    position: relative;
+    z-index: 2;
+    line-height: 1;
+    background: #fff2ef;
+}
+
+.port_right_box .port_main .main .main_list {
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.port_right_box .port_main .main .main_list ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.port_right_box .port_main .main .main_list ul li {
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+.port_right_box .port_main .main .main_list ul li:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    position: absolute;
+    left: 10px;
+    margin-top: 5px;
+}
+
+.port_right_box .port_main .main .main_list ul li span.tit {
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    width: 150px;
+}
+
+.port_right_box .port_main .main .main_list ul li span.sub {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+/* 프로필 */
+.port_right_box .port_main .main .main_list ul.id_box {
+    position: relative;
+}
+
+.port_right_box .port_main .main .main_list ul nav.id_pic {
+    box-sizing: border-box;
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.port_right_box .port_main .main .main_list ul nav.id_pic img {
+    display: block;
+    width: 100%;
+}
+
+/* 자격증 */
+.port_right_box .port_main .main .main_list.main_certificate ul {
+    margin-bottom: 50px;
+}
+
+.port_right_box .port_main .main .main_list.main_certificate ul h4 {
+    font-size: 19px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* 메뉴 바 */
+.port_right .menu_box {
+    position: fixed;
+    display: block;
+    width: 67%;
+    height: 85px;
+    padding-top: 40px;
+    padding-right: 40px;
+    float: right;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background: #fff2ef;
+}
+
+.port_right .menu_box .menu_inner {
+    position: absolute;
+    width: auto;
+    height: 33px;
+    top: 22px;
+    right: 14.5%;
+    z-index: 1100;
+}
+
+.port_right .menu_box .menu_inner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.port_right .menu_box .menu_inner ul li {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.port_right .menu_box .menu_inner ul li a {
+    box-sizing: border-box;
+    display: block;
+    width: auto;
+    height: 28px;
+    overflow: hidden;
+    margin: 0;
+    padding: 4px 0 0 0;
+    color: #696969;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.port_right .menu_box .menu_inner ul li.about_btn a {
+    color: #000;
+    border-bottom: 4px solid #000;
+}
+
+.port_right .menu_box .menu_inner ul li:hover a {
+    color: #000;
+    border-bottom: 4px solid #000;
+}
+
+/* 자격증이미지 슬릭 */
+.certi_box .slider-box-1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.certi_box .slider-box-1 .slick .item {
+    outline: 0;
+    transition: transform 0.3s;
+}
+
+.certi_box .slider-box-1 .slick .item>.img-box {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.certi_box .slider-box-1 .slick .item.slick-center {
+    transform: scale(2.3);
+}
+
+.certi_box .slider-box-1 .arrows>.btn-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(100% + 30px);
+    cursor: pointer;
+}
+
+.certi_box .slider-box-1 .arrows>.btn-arrow:active {
+    transform: translateY(-45%);
+}
+
+.certi_box .slider-box-1 .arrows>.btn-arrow.btn-arrow-right {
+    left: calc(100% + 30px);
+    right: auto;
+}
+
+/* 스킬박스 */
+.skill_bar {
+    width: 100%;
+    padding: 25px 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.skill_bar .bar {
+    margin: 20px 0px;
+}
+
+.skill_bar .bar:first-child {
+    margin-top: 0px;
+}
+
+.skill_bar .bar .info {
+    margin-bottom: 5px;
+}
+
+.skill_bar .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill_bar .bar .progress_line {
+    position: relative;
+    height: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px inset, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px inset;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.skill_bar .bar .progress_line span {
+    height: 100%;
+    width: 80%;
+    background: #000;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.skill_bar .bar .progress_line.html span {
+    width: 85%;
+}
+
+
+.skill_bar .bar .progress_line.java span {
+    width: 75%;
+}
+
+.skill_bar .bar .progress_line.ps span {
+    width: 90%;
+}
+
+.skill_bar .bar .progress_line.ai span {
+    width: 90%;
+}
+
+.skill_bar .bar .progress_line.id span {
+    width: 80%;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.skill_bar .bar .progress_line span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+
+}
+
+.skill_bar .bar .progress_line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill_bar .bar .progress_line.html span::after {
+    content: "85%";
+}
+
+
+.skill_bar .bar .progress_line.java span::after {
+    content: "75%";
+}
+
+.skill_bar .bar .progress_line.ps span::after {
+    content: "90%";
+}
+
+.skill_bar .bar .progress-line.ai span::after {
+    content: "90%";
+}
+
+.skill_bar .bar .progress-line.id span::after {
+    content: "80%";
+}
+
+/* 사이즈 조절 */
+@media (max-width: 1580px) {
+    .port_right_box .port_main .main {
+        padding: 0 5%;
+    }
+
+    .port_right_box .port_main .main .main_tit {
+        margin-bottom: 25px;
+    }
+
+    .port_right_box .port_main .main .main_tit>p {
+        font-size: 20px;
+    }
+
+    .port_right_box .port_main .main .main_list ul li {
+        margin-bottom: 30px;
+    }
+
+    .port_right_box .port_main .main .main_list ul li a .m_img {
+        margin-right: 25px;
+    }
+
+    .port_right_box .port_main .main .main_list ul li a .main_info .theme {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .port_right_box .port_main .main .main_list ul li a .main_info .logo {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 1008px) {
+    .port_right_box .port_main .main .main_list ul li a .m_img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 940px) {
+    .port_right_box .port_main .main {
+        padding: 0 3%;
+    }
+
+    .port_right_box .port_main .main .main_list ul li a .main_info .theme {
+        font-size: 10px;
+        margin-bottom: 3px;
+        letter-spacing: 4px;
+    }
+
+    .port_right_box .port_main .main .main_list ul li a .main_info .logo {
+        font-size: 17px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .port_left {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .port_left .port_left_box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 100% 0 53%;
+        background-size: 100%;
+        z-index: 10;
+    }
+
+    .port_left .port_left_box .leftbox_01 {
+        height: 100%;
+    }
+
+    .port_right {
+        float: none;
+        width: 100%;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+
+    .port_right .port_right_box {
+        clear: both;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        height: auto;
+    }
+
+    .port_right .port_right_box .port_main {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding: 5% 0 0 0;
+        box-sizing: border-box;
+    }
+
+    .port_right .port_right_box .port_main .main {
+        padding: 15px 10px;
+    }
+
+    .port_right .port_right_box .port_main .main .main_tit {
+        margin-bottom: 15px;
+        padding-top: 10px;
+    }
+
+    .port_right .port_right_box .port_main .main .main_list ul li {
+        margin-bottom: 18px;
+    }
+
+    .port_right .port_right_box .port_main .main .main_list ul li a .m_img {
+        width: 42%;
+        margin-right: 10px;
+    }
+
+    .port_right_box .port_main .main .main_list ul li a .main_info {
+        width: 58%;
+        padding-right: 10px;
+    }
+
+    .port_right_box .port_main .main .main_list ul li a .main_info .logo {
+        font-size: 14px;
+        letter-spacing: -1px;
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 680px) {
+    .port_left .port_left_box .leftbox_02 {
+        position: absolute;
+        bottom: 1px;
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        line-height: 14px;
+        font-size: 14px;
+        text-align: center;
+        padding: 4px 2px 0 2px;
+        box-sizing: border-box;
+    }
+}
