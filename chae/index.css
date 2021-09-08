@@ -1,0 +1,486 @@
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Josefin Sans", "Noto Sans KR", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(https://chaeyeon3241.github.io/portfolio_21/pt_02.png);
+}
+
+/* process_page */
+
+section.prc_page {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section.prc_page .prc_wrap {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section.prc_page .prc_wrap .prc_header {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background: url(https://chaeyeon3241.github.io/portfolio_21/pt_02.png);
+}
+
+section.prc_page .prc_wrap .prc_header:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background: #fdbe00;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: move 3s forwards;
+}
+
+@keyframes move {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+section.prc_page .prc_wrap .prc_header .hd_cover {
+    width: 450px;
+    height: 450px;
+    box-shadow: 0px 0px 70px #fdbe00;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    overflow: hidden;
+}
+
+section.prc_page .prc_wrap .prc_header .hd_cover .hd_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+section.prc_page .prc_wrap .prc_header .hd_cover .hd_box img.logo {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 300px;
+}
+
+section.prc_page .prc_wrap .prc_header .hd_box img.gif_bg {
+    position: absolute;
+    top: -150px;
+}
+
+/* prc_menu */
+section.prc_page .prc_wrap .prc_menu {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50vh;
+}
+
+section.prc_page .prc_wrap .prc_menu .menu_wrap {
+    height: 100%;
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+section.prc_page .prc_wrap .prc_menu .menu_wrap h3 {
+    box-sizing: border-box;
+    float: left;
+    width: 40%;
+    font-size: 25px;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 50px;
+}
+
+section.prc_page .prc_wrap .prc_menu .menu_wrap h3 img {
+    display: inline-block;
+    width: 60px;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-top: -10px;
+    animation: turn 8s infinite linear;
+}
+
+@keyframes turn {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section.prc_page .prc_wrap .prc_menu .menu_wrap span {
+    box-sizing: border-box;
+    float: right;
+    width: 60%;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section.prc_page .prc_wrap .prc_menu .menu_wrap span p {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 3;
+    transition: all 0.5s;
+}
+
+section.prc_page .prc_wrap .visual .menu_wrap span p {
+    color: #fff2ef;
+}
+
+/* overview page */
+section.prc_page .prc_wrap .overview {
+    background: #fff2ef;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px inset,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px inset;
+}
+
+/* visual page */
+section.prc_page .prc_wrap .visual {
+    background: url(https://chaeyeon3241.github.io/portfolio_21/pt_02.png);
+}
+
+section.prc_page .prc_wrap .visual .menu_wrap h3 {
+    color: #fff2ef;
+}
+
+/* color_box*/
+section.prc_page .prc_wrap .color_box {
+    background: url(https://chaeyeon3241.github.io/portfolio_21/pt_02.png);
+}
+
+section.prc_page .prc_wrap .color_box .menu_wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    vertical-align: middle;
+}
+
+section.prc_page .prc_wrap .color_box .menu_wrap .prc_color {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+section.prc_page .prc_wrap .color_box .menu_wrap img.color {
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+    box-shadow: -1px 1px 11px 1px rgba(255, 242, 239, 0.49);
+}
+
+/* typo page */
+section.prc_page .prc_wrap .typo {
+    background: #fff2ef;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px inset,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px inset;
+}
+
+section.prc_page .prc_wrap .prc_menu .menu_wrap span .typo_img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+section.prc_page .prc_wrap .prc_menu .menu_wrap span .typo_img img {
+    display: inline-block;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+section.prc_page .prc_wrap .prc_menu .menu_wrap span .typo_img img:last-child {
+    margin-left: 30px;
+}
+
+section.prc_page .prc_wrap .prc_space {
+    width: 100%;
+    height: 20vh;
+    background: url(https://chaeyeon3241.github.io/portfolio_21/pt_02.png);
+}
+
+/* 페이지 */
+section.prc_page .prc_wrap .page_box {
+    background: #fff2ef;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px inset, rgba(0, 0, 0, 0.23) 0px 3px 6px inset;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap {
+    display: block;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_01 {
+    display: block;
+    max-width: 1700px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_01 .page_tit {
+    margin-top: 50px;
+    padding: 10px 50px;
+    display: block;
+    text-align: center;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_01 .page_tit h4 {
+    font-size: 20px;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_01 .page_tit span {
+    display: block;
+    margin-top: 50px;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_01 .page_tit span p {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 3;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_01 .page_img {
+    border-radius: 50px;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-left: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_01 .page_img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_02 {
+    display: block;
+    width: 100%;
+    height: 75vh;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_02 .page_img {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 90%;
+    max-height: 600px;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_02 .page_img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_02 .page_tit {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    text-align: right;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_02 .page_tit h4 {
+    font-size: 20px;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_02 .page_tit span {
+    margin-top: 30px;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_02 .page_tit span p {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 3;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_03 {
+    display: block;
+    width: 100%;
+    height: 75vh;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_03 .page_img {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 90%;
+    max-height: 600px;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_03 .page_img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_03 .page_tit {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    text-align: left;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_03 .page_tit h4 {
+    font-size: 20px;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_03 .page_tit span {
+    margin-top: 30px;
+}
+
+section.prc_page .prc_wrap .page_box .page_wrap .page_03 .page_tit span p {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 3;
+}
+
+/* prc_footer */
+.prc_footer {
+    display: table;
+    width: 100%;
+    height: 20vh;
+    background: url(https://chaeyeon3241.github.io/portfolio_21/pt_02.png);
+}
+
+.prc_footer span {
+    color: #fff2ef;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 23px;
+}
+
+/* process_사이즈조절 */
+@media (max-width: 1300px) {
+    section.prc_page .prc_wrap .prc_menu .menu_wrap h3 {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        top: 15%;
+        transform: translateY(0);
+        padding-left: 0;
+        text-align: center;
+    }
+
+    section.prc_page .prc_wrap .prc_menu .menu_wrap span {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    section.prc_page .prc_wrap .typo {
+        height: 80vh;
+    }
+
+    section.prc_page .prc_wrap .typo .menu_wrap span {
+        top: 35%;
+    }
+
+    section.prc_page .prc_wrap .typo .menu_wrap span .typo_img {
+        margin-top: 50px;
+        display: block;
+        width: 80%;
+    }
+
+    section.prc_page .prc_wrap .typo .menu_wrap span .typo_img img {
+        display: block;
+        width: 100%;
+    }
+
+    section.prc_page .prc_wrap .prc_menu .menu_wrap span .typo_img img:last-child {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    section.prc_page .prc_wrap .page_box .page_wrap .page_02 .page_img,
+    section.prc_page .prc_wrap .page_box .page_wrap .page_03 .page_img {
+        position: absolute;
+        right: 0;
+        top: 100px;
+        width: 100%;
+        height: auto;
+        transition: all 0.3s;
+    }
+
+    section.prc_page .prc_wrap .page_box .page_wrap .page_02 .page_tit,
+    section.prc_page .prc_wrap .page_box .page_wrap .page_03 .page_tit {
+        bottom: 15%;
+        right: 5%;
+        transition: all 0.3s;
+    }
+}
+
+@media (max-width: 900px) {
+    section.prc_page .prc_wrap .prc_menu .menu_wrap span p {
+        font-size: 15px;
+        transition: all 0.5s;
+    }
+}
