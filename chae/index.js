@@ -47,7 +47,7 @@ function SliderBox1__init() {
     $(".slider-box-1 > .slick").slick({
         dots: false,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         pauseOnHover: false,
         slidesToShow: 3,
         slidesToScroll: 1,
